@@ -43,9 +43,10 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
   cursor: pointer;
   transition: border-color 0.25s;
+  margin: 20px
 }
 button:hover {
   border-color: #646cff;
