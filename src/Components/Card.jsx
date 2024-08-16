@@ -1,10 +1,11 @@
 import React from "react";
-import styles from "../Styles/Card.module.css"; // Asegúrate de que la ruta sea correcta
 
-const Card = () => {
-  return <div className={styles.card}>Hola, soy una tarjeta</div>;
+const Card = ({ name}) => {
+  return (
+    <div>
+      <h1>♡I LOVE KPOP♡ </h1>
+    </div>
+  );
 };
 
 export default Card;
-
-

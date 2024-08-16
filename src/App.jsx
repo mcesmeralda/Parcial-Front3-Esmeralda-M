@@ -1,12 +1,11 @@
 import React from "react";
 import Card from "./Components/Card";
 import Form from "./Components/Form";
-import "./Styles/App.css"; // Asegúrate de que la ruta sea correcta
-
+import "./Styles/App.css"; 
 function App() {
   return (
     <div className="App">
-      <h1>Carga de estudiantes</h1>
+      <h1>KPOP GROUP</h1>
       <Form />
       <Card />
     </div>

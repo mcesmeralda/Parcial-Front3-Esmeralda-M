@@ -10,21 +10,25 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-   
+  
     if (name.length < 3 || name.trim() !== name) {
       setError("Por favor revisa que la información sea correcta");
       return;
     }
 
-    
+   
     if (favoriteGroup.length < 6) {
       setError("Por favor revisa que la información sea correcta");
       return;
     }
 
-   
+
     setError("");
     setFlag(true);
+
+    
+    setName("");
+    setFavoriteGroup("");
   };
 
   return (
@@ -45,14 +49,13 @@ const Form = () => {
         <button type="submit">Enviar</button>
       </form>
 
-     
+    
       {error && <p style={{ color: "red" }}>{error}</p>}
 
-     
+      
       {flag && <Message name={name} favoriteGroup={favoriteGroup} />}
     </div>
   );
 };
 
 export default Form;
-
